@@ -1,13 +1,107 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+*{
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+  font-family: 'Quicksand',sans-serif;
+}
+body{
+  background-color: #87ceeb;
+  background-image: radial-gradient(red,black);
+  color: white;
+}
+.App{
+  padding: 5rem 7rem;
+}
+.App h1{
+  color: rgb(209, 238, 240);
+  font-size: 3rem;
+  font-weight: 700;
+  font-family: 'Quicksand',sans-serif;
+  padding: 0rem 0rem 2rem 0rem;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+button{
+  padding: 0.1rem;
+
+}
+
+.links{
+  margin-left: auto;
+  display: flex;
+  flex-direction: row;
+}
+.navbar{
+  display: flex;
+  flex-direction: row;
+}
+.navbar a{
+  color: white;
+  padding: 1rem;
+  font-weight: 700;
+
+}
+.navbar a:hover{
+  color: #87ceeb;
+}
+
+.blog-preview{
+  padding: 1rem;
+  color: white;
+}
+.blog-preview:hover{
+  box-shadow: 1px 3px 5px white;
+}
+.blog-preview a{
+  text-decoration: none;
+}
+.blog-preview h2{
+  color: white;
+}
+.blog-preview p{
+  color: yellow;
+}
+
+/* blog deails page */
+
+.blog-details h2{
+  margin-bottom: 2rem;
+}
+
+.blog-details p{
+  margin-bottom: 2rem;
+}
+
+.blog-details div{
+  font-style: italic;
+}
+
+/* Create style */
+.create{
+  max-width: 30rem;  
+  
+  margin:auto;
+  display: flex;
+  flex-direction: column;
+}
+.create h2{
+  align-self: center;
+}
+.create form{
+  display: flex;
+  flex-direction: column;
+
+}
+.create label{
+  padding: 1rem 0rem;
+}
+.create input, .create textarea, .create select{
+  padding: 0.5rem;
+}
+.create button{
+  padding: 0.5rem;
+  margin: 1rem;
+  width: fit-content;
+  align-self: center;
 }
