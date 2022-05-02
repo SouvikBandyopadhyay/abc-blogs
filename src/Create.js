@@ -20,7 +20,7 @@ const Create = () => {
         }).then(()=> {
             console.log("new blog added"+blog)
             setIspending(false);
-            history.push("/")
+            history.push("/abc-blogs")
         })
     }
     return(

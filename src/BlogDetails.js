@@ -9,7 +9,7 @@ const BlogDetails = () => {
     const handleDelete = ()=>{
         fetch("https://my-json-server.typicode.com/SouvikBandyopadhyay/JSON_FOR_REACT/blogs/"+id,{
             method: "DELETE"
-        }).then(() => history.push("/"))
+        }).then(() => history.push("/abc-blogs"))
     }
 
     return ( 
